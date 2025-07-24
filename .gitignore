@@ -1,0 +1,27 @@
+# Dependency directories
+**/node_modules/
+*/node_modules/*
+**/.pnpm-store/
+**/.yarn/
+**/bower_components/
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Build directories
+dist/
+build/
+out/
+.next/
+
+# Logs
+*.log
+logs/
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
