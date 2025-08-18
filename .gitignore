@@ -4,7 +4,7 @@
 **/.pnpm-store/
 **/.yarn/
 **/bower_components/
-
+desktop.ini
 # Environment files
 .env
 .env.local

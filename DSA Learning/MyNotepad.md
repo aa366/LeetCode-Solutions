@@ -1,0 +1,12 @@
+
+Data Structure 
+a data structure is a specific way of organizing storing , and accessing data.
+
+Algorithm 
+A set of instructions that tells a computer how to do something , or
+step by step solution of the problem 
+
+Problem 
+
+
+
