@@ -8,11 +8,11 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   
     "dev": "nodemon --exec npx ts-node src/index.ts",
     "seed:prod": "NODE_ENV=production node ./build/src/seeds/init.js"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
