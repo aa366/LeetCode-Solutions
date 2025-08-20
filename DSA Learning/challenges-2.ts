@@ -1,3 +1,4 @@
+// stack & Queue
 const isValidParenthesis= (str:string)=>{
     const stack:any[] = []
     const brackets = {
@@ -46,3 +47,42 @@ function reverseString(str:string) {
     return reverseStr
     
 }
+
+// hashtable
+const text = [1,2,3,4,5,6,8,2,34,6,7,1]
+
+function wordCounter(str:string) {
+    const lower = str.toLowerCase()
+
+    const wordMap :any= {}
+    const words = lower.split(/\s+/)
+    for (const word of words) {
+        if (word in wordMap) {
+            wordMap[word]++
+            
+        }else{
+             wordMap[word] = 1
+        }
+       
+        
+    }
+    return wordMap
+
+}
+
+function twoSum(nums:number[],target:number) {
+    const numMap :any= {}
+    for (let i = 0; i < nums.length; i++) {
+        const compliment = target - nums[i]
+        if (compliment in numMap && numMap[compliment ]!== i) {
+            return [numMap[compliment],i]
+        }
+        numMap[nums[i]] = i
+
+        
+    }
+    return []
+    
+}
+
+console.log(twoSum(text,4));

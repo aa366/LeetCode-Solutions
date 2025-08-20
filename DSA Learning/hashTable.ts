@@ -43,11 +43,39 @@ class HashTable {
         }
         return undefined
     }
+    getAllKeys(){
+        const keys :any[]= []
+
+        for (let i = 0; i < this.keyMap.length ; i++) {
+           if (this.keyMap[i]) {
+           
+              keys.push(this.keyMap[i][0])
+                
+           }
+            
+        }
+        return keys
+    }
+     getAllValues(){
+        const keys :any[]= []
+
+        for (let i = 0; i < this.keyMap.length ; i++) {
+           if (this.keyMap[i]) {
+           
+              keys.push(this.keyMap[i][1])
+                
+           }
+            
+        }
+        return keys
+    }
 }
 const phoneBook = new HashTable(5)
 
 phoneBook.set("asd", "342323-23-4-234")
+phoneBook.set("fdgdf", "342323-23-4-234")
+phoneBook.set("asfgrefdgd", "342323-23-4-234")
 
-console.log(phoneBook.get("asd"));
+console.log(phoneBook.getAllValues());
 
 

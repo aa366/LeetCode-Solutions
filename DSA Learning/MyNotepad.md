@@ -6,7 +6,7 @@ Algorithm
 A set of instructions that tells a computer how to do something , or
 step by step solution of the problem 
 
-Problem 
+ 
 
 
 
